@@ -1,0 +1,2 @@
+# HKUSTGZ_DSAA5002_project_Financial_Text_Analysis_Knowledge_Graph
+Financial Text Analysis and Knowledge Graph Construction for Decision-Making
