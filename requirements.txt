@@ -1,0 +1,8 @@
+LAC==2.1.2
+neo4j==5.14.1
+pandas==1.5.3
+protobuf==4.25.1
+thefuzz==0.20.0
+torch==2.0.1
+tqdm==4.65.0
+transformers==4.29.2
