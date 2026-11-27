@@ -34,15 +34,16 @@
 # In[8]:
 
 
+import os
 import pandas as pd
 from neo4j import GraphDatabase
 from tqdm import tqdm
 
-# 这一部分，请根据自己的neo4j数据库的用户名和密码来修改
-# Please modify the username and password of your neo4j database
-uri = "neo4j://localhost:7687"  
-username = "neo4j"
-password = "912699176"
+# 从环境变量读取 Neo4j 配置；运行前必须设置 NEO4J_PASSWORD。
+# Read Neo4j configuration from environment variables; set NEO4J_PASSWORD before running.
+uri = os.getenv("NEO4J_URI", "neo4j://localhost:7687")
+username = os.getenv("NEO4J_USERNAME", "neo4j")
+password = os.environ["NEO4J_PASSWORD"]
 
 driver = GraphDatabase.driver(uri, auth=(username, password))
 
